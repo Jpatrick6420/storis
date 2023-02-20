@@ -2,8 +2,8 @@
     font-size: 20px;
     font-weight: 500;
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: #DFF6FF;
+    color: #06283D;
     
     
     width: 100%;
@@ -20,64 +20,41 @@ h1 {
 
 
 button {width: 180px;
-    background: blue;
+    background: #1363DF;
     Font-size: .7rem;
     }
-video{
-    width: 50vw;
-}
+
 
 .exampleImage{
-width: 25px;}
+width: 25px;
+paddding-left: 3px;}
 
 emp.clickable {
-	color: yellow;
+	color: #47B5FF;
 	}
-
-emp.scrollable {
-	color: magenta;}
 
 
 
 nav {display: flex;}
 
-.dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    width: 15vw;
-    
-}
-
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(145, 2, 2, 0.08);
-    z-index: 1;
-    
-}
-
-.dropdown-content a {
-    color: red;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: grey;
-}
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdownn:hover .dropbtn {background-color: #3e8e41;}
+.buttonClass {
+    font-size: .65rem;
+    font-family:Arial;
+    width:140px;
+    height: 3vh;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#124d77;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    text-shadow:inset 0px 1px 0px #154682;
+    background:linear-gradient(rgba(19, 99, 223, 1), rgba(71, 181, 255, 1));
+  }
+  
+  .buttonClass:hover {
+    background: linear-gradient(rgba(71, 181, 255, 1), rgba(19, 99, 223, 1));
+  }
+            
