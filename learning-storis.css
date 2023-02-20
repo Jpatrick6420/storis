@@ -19,10 +19,7 @@ h1 {
 }
 
 
-button {width: 180px;
-    background: #1363DF;
-    Font-size: .7rem;
-    }
+
 
 
 .exampleImage{
@@ -40,7 +37,7 @@ nav {display: flex;}
 .buttonClass {
     font-size: .65rem;
     font-family:Arial;
-    width:140px;
+    width:160px;
     height: 3vh;
     border-width:1px;
     color:#ffffff;
