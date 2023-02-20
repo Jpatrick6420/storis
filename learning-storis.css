@@ -35,7 +35,7 @@ emp.clickable {
 nav {display: flex;}
 
 .buttonClass {
-    font-size: .65rem;
+    font-size: .60rem;
     font-family:Arial;
     width:160px;
     height: 3vh;
