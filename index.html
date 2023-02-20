@@ -25,10 +25,10 @@
     </div>
      
     <ul>
-        <li >1,1,1 Sales Order Entry      <button onclick="Tutorial()">Enter a Sales Order</button></li>
+        <li >1,1,1 Sales Order Entry      <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
         <li>1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer Inquiry.<button onclick="PlayProductActivity()">View Product Activity</button></li>
-        <li>1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales  <button onclick="PlaySalesActivity()">View Sales Activity</a></li>
-        <li>1,2,16 Check Delivery Schedule <button onclick="DeliverySchedule()">Enter a Sales Order</a></li>
+        <li>1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales  <button class='buttonClass' onclick="PlaySalesActivity()">View Sales Activity</a></li>
+        <li>1,2,16 Check Delivery Schedule <button class='buttonClass' onclick="DeliverySchedule()">Enter a Sales Order</a></li>
     </ul>
  
     <div class="salesOrder" id="salesOrderNotes" style="display: none;">
@@ -60,7 +60,7 @@
             <li>Input all individual coupon codes </li>
             <li>Select AS is button if it is as is. (You can search for it if needed)</li>
             <li> Select save and add another to add another item to ticket and repeat previous steps or select Save to move on.</li>
-            <li>Modify Order ** if you only see SKU numbers then do as follows:<button onclick="openModifyInstructions()" id="modifyInstructions">steps</button></li>
+            <li>Modify Order ** if you only see SKU numbers then do as follows:<button class='buttonClass' onclick="openModifyInstructions()" id="modifyInstructions">steps</button></li>
                 <ol type='a' id="DescriptionField" style="display: none;">
                     <li>Left click above item field</li>
                     <li>A drop down should appear</li>
@@ -78,7 +78,7 @@
 				<li>under handling method: select if there are special notes for delivery. (leave in box or etc ) This is rare. 
             
             <li>Verify Address: if wrong, click 3 dots and fill out info and click save</li>
-            <li>If multiple deliveries are required follow <button id='multipleFullfilments' onclick='openFulfilmentInstructions()'> these steps</button></li>
+            <li>If multiple deliveries are required follow <button class= 'buttonClass' id='multipleFullfilments' onclick='openFulfilmentInstructions()'> these steps</button></li>
                 <ol type = 'a' style="display: none;" id="FulfilmentInstructions">
                     <li>Click New Fulfilment and accept that another delivery already exists. </li>
 							<li>Double click route code for new fullfilment.</li>
@@ -105,7 +105,7 @@
             <li>Select the printer</li>
             <li>Choose your print options (by fulfilment if there are multipe fullfilments or by room if you have multiple rooms assigned</li>
         </ol>
-        <button id='closeInstructions' onclick="closeInstructions()">close</button>
+        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
     </div>
 
 
@@ -156,7 +156,7 @@
 							
 						
         </ol>
-        <button id='closeInstructions' onclick="closeInstructions()">close</button>
+        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
     </div>
 
 
@@ -178,7 +178,7 @@
 				</ol>
 			
 		</ol>
-        <button id='closeInstructions' onclick="closeInstructions()">close</button>
+        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
 	</div>
 	
 	<!--delivery notes-->
@@ -193,7 +193,7 @@
 			<li>View Schedule</li>
 			<li>Click Clear to check different route</li>
 		</ol>
-        <button id='closeInstructions' onclick="closeInstructions()">close</button>
+        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
 	</section>
 	
     <script src="learning-storis.js"></script>
