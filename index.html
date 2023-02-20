@@ -26,7 +26,7 @@
      
     <ul>
         <li >1,1,1 Sales Order Entry      <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
-        <li>1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer Inquiry.<button onclick="PlayProductActivity()">View Product Activity</button></li>
+        <li>1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer Inquiry.<button class='buttonClass' onclick="PlayProductActivity()">View Product Activity</button></li>
         <li>1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales  <button class='buttonClass' onclick="PlaySalesActivity()">View Sales Activity</a></li>
         <li>1,2,16 Check Delivery Schedule <button class='buttonClass' onclick="DeliverySchedule()">Enter a Sales Order</a></li>
     </ul>
@@ -36,7 +36,7 @@
             <li>Open "Enter a Sales Order" <img src= "./images/salesorder.jpeg" id="salesOrderExample" onclick="openSalesOrder()" style= 'width: 25px'> </li>
             <li>Click the Green Button</li>
 				<li>Select order type: sales order or Sales Quote</li>
-				<li>Input Sales Person Number<button id="multSalesPeople" onclick="multipleSalesPerson()">Multiple People</button></li>
+				<li>Input Sales Person Number<button class='buttonClass' id="multSalesPeople" onclick="multipleSalesPerson()">Multiple People</button></li>
 					<ol id="salesPerson" style="display: none;" type="a"> 
 						<li>Type an associate number in the salesperson field or push the action button (3 dots) and click "Multiple Commision Entry" to enter additional salespeople.</li>
 						<li>Enter additional associate numbers and then press enter or the search icon. </li>
@@ -47,7 +47,7 @@
 					</ol>
             <li>Search for a customer by phone number, if unknown, click the magnifying glass and fill out the known info on the left. Push search and double click the customer</li>
             <li>Select Merchandise Tab on Left Side </li>
-            <li>Enter SKU under product and push tab or click the magnifying glass . if unknown then select <button onclick="displaySearchTips()" id="searchTips">select search</button><img src= "./images/merchandise.jpeg" id="merchandiseImage" onclick= "openMerchandiseScreen()" class= "exampleImage" style= "width: 25px;"> </li>
+            <li>Enter SKU under product and push tab or click the magnifying glass . if unknown then select <button class='buttonClass' onclick="displaySearchTips()" id="searchTips">select search</button><img src= "./images/merchandise.jpeg" id="merchandiseImage" onclick= "openMerchandiseScreen()" class= "exampleImage" style= "width: 25px;"> </li>
                 <ol id="search" style="display: none;" type="a">
                     <li>Product field is only used for SKU's</li>
                     <li>Description has to match the buyers description and word order </li>
