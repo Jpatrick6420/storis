@@ -37,8 +37,8 @@ nav {display: flex;}
 .buttonClass {
     font-size: .60rem;
     font-family:Arial;
-    width:160px;
-    height: 3vh;
+    width:180px;
+    height: 3.5vh;
     border-width:1px;
     color:#ffffff;
     border-color:#124d77;
