@@ -25,13 +25,12 @@
             <li><a href="#check-delivery">Check Delivery</a></li>
             <li><a href="#undelivered">Check Undelivered</a></li>
             <li><a href="#exchange">Exchange</a></li>
-            <li><a href="#">Find Kit Skus</a></li>
+            <li><a href="#kit-skus">Find Kit Skus</a></li>
             <li><a href="#">Find Salesman</a></li>
             <li><a href="#">Multiple Deliveries</a></li>
             <li><a href="#">Multiple salepeople</a></li>
             <li><a href="#">Special orders</a></li>
-            <li><a href="#">Return</a></li>
-            <li><a href="#">Who's working</a></li>
+
 
 
 
@@ -43,48 +42,131 @@
         <div id="check-stock-section">
             <p id="check-stock">Check Stock Unidata: 1,2,11</p>
             <ol>
-                <li>Open <emp>product activity</emp>
+                <li>Click <emp>View Product Activity</emp>
                 </li>
-                <li>Enter the product number or sku# under product</li>
-                <div>
+                <li>Enter the product number or sku# under product if known <button
+                        class="search-product buttonClass">else</button>
+                </li>
+                <div class="product-search">
                     <ol>
                         <li>Select Magnifying Glass</li>
-                        <li>Enter your search parameters (example: Make, description or other)</li>
+                        <li>Enter Description, Model Number, Vender, Collection, Status(00,01,11,22,33), or
+                            product group and/or price range(field 1,2,10 but names have changed/expanded)</li>
+                        <li>Click Search</li>
+                        <li>Check boxes next to all desired items</li>
+                        <li>Click save</li>
+                        <li>information is displayed in bottom right corner of the screen.(Only one item is viewed per
+                            screen)</li>
+                        <li>Click previous or next to view additionally selected items</li>
+                        <li>Click exit to close screen</li>
                     </ol>
                 </div>
-                <li>Select multiple locations from the </li>
-                <li>Look through chart at the botoom of the page to see where stock is located</li>
-                <li>push tab</li>
+                <li>Click Magnifying Glass</li>
+                <li>information is displayed in bottom right corner of the screen</li>
+                <li>Fields can be sorted by cling the arrows in the header and selecting the desired option</li>
             </ol>
         </div>
-        <div id="check-delivery-section">
+        <div class="check-delivery-section">
             <p id="check-delivery">Check Delivery Date Unidata: 1,2,16</p>
             <ol>
-                <li>Select <emp>Enter a Sale</emp>
+                <li>Click <emp>Enter a Salesorder</emp>
                 </li>
-                <li>Select action button (3 dots next to Green Plus)</li>
-                <li>Select <emp>Check delivery dates</emp>
+                <li>Click action button (3 dots)</li>
+                <li>Enter the zip code or route
                 </li>
-                <li>Enter in Zip code</li>
-                <li>Select enter</li>
+                <li>Click the Magnifying glass</li>
+                <li>Double click the desired route</li>
+                <li>Click the calender to see dates (red X's mean closed)</li>
+                <li>Click exit to close</li>
             </ol>
         </div>
         <div id="undelivered-section">
             <p id="undelivered">Run Undelivered Unidata: 1, 2, 24, 2</p>
             <ol>
-                <li>Select <emp>Salesperson Activity </emp>
+                <li>Click <emp>View Salesperson Activity </emp>
                 </li>
                 <li>Enter Sales Number</li>
-                <li>Push tab</li>
-                <li>Select <emp>open orders</emp>
+                <li>Click Magnifying glass</li>
+                <li>Select <emp>open orders</emp> on the left side of screen
                 </li>
+                <li>information is on the bottom right of the screen</li>
+                <li>
+                    <button class="options buttonClass">sort options:</button>
+                </li>
+                <div class="sort-options">
+                    <ol>
+                        <li>Click arrow in column header, by order type (sales/return) to isolate returns
+                            or sales orders
+                        </li>
+                        <li>Click arrow in column header, by fullfillment to isolate delivery or pickup</li>
+                        <li>Other options are available using different fields</li>
+                    </ol>
+                </div>
+
             </ol>
         </div>
         <div id="exchange-section">
             <p id="exchange">Exchange</p>
             <ol>
                 <li>Select Enter Exchange</li>
-                <li>Enter Order Number</li>
+                <li>Push green button or push action button ( 3 dots)</li>
+                <li>Select option from fullfillment method(delivery, pickup, take with)</li>
+                <li>Enter original original sales order if known <button class="customer buttonClass">else click
+                        magnifying
+                        glass</button>
+                </li>
+                <div class="customer-search">
+                    <ol>
+                        <li>Select search for customer</li>
+                        <li>Enter Details and click search</li>
+                        <li>Double click Account</li>
+                        <li>Double click order</li>
+                    </ol>
+                </div>
+                <li>Enter delivery date or click calendar to select date</li>
+                <li>Enter status(customer will call means that the customer isn't ready to pick a receiving method
+                    , option must be chosen if no date is entered
+                </li>
+                <li>Select merchandise tab from left side of screen or click save</li>
+                <li>Check boxes to the left of all prodct numbers that are being returned</li>
+                <li>Select reason code</li>
+                <li>Select sales merchandise on the left side of the screen. If even exchange then select <emp>yes</emp>
+                    else go to sales entry instructions</li>
+                <li>Select add for additional items</li>
+                <li>Click payment on left side of the screen</li>
+                <li>Select exit on the protection plan screen(until Bennion updates the fab plans)</li>
+                <li>
+                    <button class="finance buttonClass">if financing</button></emp>
+                </li>
+                <div class="financing-tab">
+                    <ol>
+                        <li>Click magnifying glass</li>
+                        <li>Double click plan</li>
+                    </ol>
+                </div>
+                <li>Click save to finalize</li>
+                <li>Select print and then click save</li>
+                <li>Done</li>
+            </ol>
+        </div>
+
+
+        <div id="kit-skus-section">
+            <p id="kit-skus">Find Kit Skus</p>
+            <ol>
+                <li>Enter <emp>View Product Activity</emp>
+                </li>
+                <li>Enter sku for single item if known, else click magnifying glass</li>
+                <li>Click action button (3 dots)</li>
+                <li>Select search related collection</li>
+                <li>Scroll down to included products and only select include kit masters</li>
+                <li>Fill in any other relavent information</li>
+                <li>Click search</li>
+                <li>Check boxes next to the options desired</li>
+                <li>Push Save</li>
+                <li>Bottom left box shows availability</li>
+                <li>Select arrow next to net available and select a number greater than One</li>
+                <li>Click off of the box, if kits are available, view their location</li>
             </ol>
         </div>
 

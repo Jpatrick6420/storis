@@ -73,3 +73,24 @@ nav {
     height: 50px;
     width: auto
 }
+
+/* glossary css  */
+.product-search {
+    display: none;
+}
+
+.sort-options {
+    display: none;
+}
+
+.customer-search {
+    display: none
+}
+
+.financing-tab {
+    display: none;
+}
+
+button {
+    width: 300px;
+}
