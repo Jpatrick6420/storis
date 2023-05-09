@@ -138,14 +138,16 @@ function closeInstructions() {
     salesActivity.style.display = "none";
     productivity.style.display = "none";
     delivery.style.display = "none";
+    showManageOpenOrders.style.display = "none";
+    
 
 }
 
 // manage open orders section 
-
-manageOpenOrders.addEventListener("click", () => {
-    const showManageOpenOrders = document.querySelector(".manage-open-orders");
-    showManageOpenOrders.style.display === "none" ? showManageOpenOrders.style.display = "block" : showManageOpenOrders.style.display = "none";
+const showManageOpenOrders= document.querySelector(".show-manage-open-orders");
+showManageOpenOrders.addEventListener("click", () => {
+    const manageOpenOrders = document.querySelector(".manage-open-orders");
+    manageOpenOrders.style.display === "none" ? manageOpenOrders.style.display = "block" : manageOpenOrders.style.display = "none";
 })
 
 const showAddNotes = document.querySelector(".show-add-notes");
