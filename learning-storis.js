@@ -144,9 +144,11 @@ function closeInstructions() {
 }
 
 // manage open orders section 
+
+const manageOpenOrders = document.querySelector(".manage-open-orders");
 const showManageOpenOrders= document.querySelector(".show-manage-open-orders");
 showManageOpenOrders.addEventListener("click", () => {
-    const manageOpenOrders = document.querySelector(".manage-open-orders");
+    
     manageOpenOrders.style.display === "none" ? manageOpenOrders.style.display = "block" : manageOpenOrders.style.display = "none";
 })
 
