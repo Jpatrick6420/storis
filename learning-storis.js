@@ -140,3 +140,28 @@ function closeInstructions() {
     delivery.style.display = "none";
 
 }
+
+// manage open orders section 
+
+manageOpenOrders.addEventListener("click", () => {
+    const showManageOpenOrders = document.querySelector(".manage-open-orders");
+    showManageOpenOrders.style.display === "none" ? showManageOpenOrders.style.display = "block" : showManageOpenOrders.style.display = "none";
+})
+
+const showAddNotes = document.querySelector(".show-add-notes");
+const addNotes = document.querySelector(".add-notes");
+const showAuditComments = document.querySelector(".show-audit-comments");
+const auditComments = document.querySelector(".audit-comments");
+const showDeliveryInstructions = document.querySelector(".show-delivery-instructions");
+const deliveryInstructions = document.querySelector(".delivery-instructions")
+
+showAddNotes.addEventListener("click", () => {
+    addNotes.style.display === "none" ? addNotes.style.display = "block" : addNotes.style.display = "none";
+})
+showAuditComments.addEventListener("click", () => {
+    auditComments.style.display === "none" ? auditComments.style.display = "block" : auditComments.style.display = "none";
+})
+
+showDeliveryInstructions.addEventListener("click", () => {
+    deliveryInstructions.style.display === "none" ? deliveryInstructions.style.display = "block" : deliveryInstructions.style.display = "none";
+})
