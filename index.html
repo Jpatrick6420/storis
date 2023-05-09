@@ -43,7 +43,9 @@
         <li>1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales <button
                 class='buttonClass' onclick="PlaySalesActivity()">View Sales Activity</a></li>
         <li>1,2,16 Check Delivery Schedule <button class='buttonClass' onclick="DeliverySchedule()">Enter a Sales
-                Order</a></li>
+                Order</a></li><br>
+        <li>1, 2, 24, 2 Work Undelivered Report <button class="buttonClass show-manage-open-orders">View and Manage Open
+                Orders</button>
         <li><a href="./glossary.html">Glossary</a></li>
     </ul>
 
@@ -241,6 +243,66 @@
             <li>Click Clear to check different route</li>
         </ol>
         <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
+    </section>
+
+     <!-- mangage open orders section   NEW CONTENT-->
+    <section class="manage-open-orders" style="display: none">
+        <ol>
+            <li>Open view and manage open orders</li>
+            <li>Set Options</li>
+            <ul>
+                <li>selling location: store</li>
+                <li>Fulfillment location:</li>
+                <ol>
+                    <li>click magnifying glass</li>
+                    <li>Select All Warehouses</li>
+                </ol>
+                <li>Input sales persons number</li>
+                <li>order dates and fulfillment dates should be changed. Default should be cytd (current year to Date)
+                </li>
+            </ul>
+            <li>click Search</li>
+            <li>To update a ticket click maintain</li>
+            <ol>
+                <li>Customer Section</li>
+                <ul>
+                    <li><button class="buttonClass show-add-notes">add notes:</button></li>
+                    <div class="add-notes" style="display: none">
+                        <ol>
+                            <li>Click action button (3 dots)</li>
+                            <li>Select <emp>add additional comments</emp>
+                            </li>
+                            <li>Update information</li>
+                            <li>Click save</li>
+                        </ol>
+                    </div>
+                    <li><button class="buttonClass show-audit-comments">Audit Comments (show modifications)</button>
+                    </li>
+                    <div class="audit-comments" style="display: none">
+                        <ol>
+                            <li>Click action button</li>
+                            <li>select audit comments to see modifications</li>
+                        </ol>
+                    </div>
+                    <li><button class="buttonClass show-delivery-instructions">Show Delivery Instructions</button></li>
+                    <div class="delivery-instructions" style="display: none">
+                        <ol>
+                            <li>Click Action Button</li>
+                            <li>Click Update customer address</li>
+                            <li>Under extended Delivery instructions **fill out for small truck or gates, it will
+                                include notes on all future deliveries</li>
+                        </ol>
+                    </div>
+                </ul>
+            </ol>
+            <li>Other columns of interest</li>
+            <ul>
+                <li>Fulfillment Sttus: scheduled, pickup, estimated or cwc (customer will call when ready to schedule
+                </li>
+                <li>Stock Location</li>
+                <li>Fulfillment requested date: date estimated to customer if enterred at time of purchase</li>
+            </ul>
+        </ol>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="learning-storis.js"></script>
