@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Storis</title>
+    <link href="../../learning-storis.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width" />
+    <script
+      src="https://kit.fontawesome.com/dba77b6ef4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/reference_items.js" defer></script>
+    <script src="../../mobile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p class="nav-mobile__menu--toggle"><i class="fa-solid fa-bars"></i></p>
+      </div>
+      <div class="nav-mobile__container">
+        <div class="nav-mobile__menu">
+          <ul class="nav-mobile__links">
+            <li class="nav-mobile__link">
+              <a href="../../index.html">Home</a>
+            </li>
+            <li class="nav-mobile__link">
+              <a href="../sales_order/sales_order.html"
+                >Completeing a Sales order</a
+              >
+            </li>
+
+            <li class="nav-mobile__link manage">
+              <a href="../manage_undelivered/manage_undelivered.html"
+                >Manage Undelivered</a
+              >
+            </li>
+            <li class="nav-mobile__link">
+              <a href="#viewSalesActivityNotes">Sales activity</a>
+            </li>
+            <li class="nav-mobile__link">
+              <a href="#deliveryNotes">Delivery Notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <img
+          class="title-image"
+          src="../../images/STORIS-Logo.png"
+          alt="storis logo"
+        />
+      </div>
+    </nav>
+    <section class="manage-open-orders" id="'manage-open-orders">
+      <ol>
+        <li>Open view and manage open orders</li>
+        <li>Set Options</li>
+        <ul>
+          <li>selling location: store</li>
+          <li>Fulfillment location:</li>
+          <ol>
+            <li>click magnifying glass</li>
+            <li>Select All Warehouses</li>
+          </ol>
+          <li>Input sales persons number</li>
+          <li>
+            order dates and fulfillment dates should be changed. Default should
+            be cytd (current year to Date)
+          </li>
+        </ul>
+        <li>click Search</li>
+        <li>To update a ticket click maintain</li>
+        <ol>
+          <li>Customer Section</li>
+          <ul>
+            <li>
+              <button class="buttonClass show-add-notes">add notes:</button>
+            </li>
+            <div class="add-notes" class="hidden">
+              <ol>
+                <li>Click action button (3 dots)</li>
+                <li>Select <emp>add additional comments</emp></li>
+                <li>Update information</li>
+                <li>Click save</li>
+              </ol>
+            </div>
+            <li>
+              <button class="buttonClass show-audit-comments">
+                Audit Comments (show modifications)
+              </button>
+            </li>
+            <div class="hidden audit-comments">
+              <ol>
+                <li>Click action button</li>
+                <li>select audit comments to see modifications</li>
+              </ol>
+            </div>
+            <li>
+              <button class="buttonClass show-delivery-instructions">
+                Show Delivery Instructions
+              </button>
+            </li>
+            <div class="hidden delivery-instructions">
+              <ol>
+                <li>Click Action Button</li>
+                <li>Click Update customer address</li>
+                <li>
+                  Under extended Delivery instructions **fill out for small
+                  truck or gates, it will include notes on all future deliveries
+                </li>
+              </ol>
+            </div>
+          </ul>
+        </ol>
+        <li>Other columns of interest</li>
+        <ul>
+          <li>
+            Fulfillment Sttus: scheduled, pickup, estimated or cwc (customer
+            will call when ready to schedule
+          </li>
+          <li>Stock Location</li>
+          <li>
+            Fulfillment requested date: date estimated to customer if enterred
+            at time of purchase
+          </li>
+        </ul>
+      </ol>
+    </section>
+  </body>
+</html>

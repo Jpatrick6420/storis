@@ -1,58 +1,70 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Learning Storis</title>
-    <link href="learning-storis.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= device-width">
-    <script src="https://kit.fontawesome.com/dba77b6ef4.js" crossorigin="anonymous"></script>
-    <script src = './assets/reference_items.js'  defer></script>
-    <script src ='./mobile.js' defer></script>
-</head>
-<body>
-<nav>
-    <div>
+    <link href="learning-storis.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width" />
+    <script
+      src="https://kit.fontawesome.com/dba77b6ef4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/reference_items.js" defer></script>
+    <script src="./mobile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div>
         <p class="nav-mobile__menu--toggle"><i class="fa-solid fa-bars"></i></p>
-    </div>
-    <div class="nav-mobile__container">
+      </div>
+      <div class="nav-mobile__container">
         <div class="nav-mobile__menu">
-            <ul class="nav-mobile__links">
-                <li class="nav-mobile__link order"><p>Completeing Sales Order</p></li>
-                <li class="nav-mobile__link product"><a href="#ProductivityNotes">View Product Activity</a></li>
-                <li class="nav-mobile__link manage"><a href="#manage-open-orders">Manage undelivered</a></li>
-                <li class="nav-mobile__link"><a href="#viewSalesActivityNotes">Sales activity</a></li>
-                <li class="nav-mobile__link"><a href="#deliveryNotes">Delivery Notes</a></li>
-                
-            </ul>
-
+          <ul class="nav-mobile__links">
+            <li class="nav-mobile__link">
+              <a href="./pages/sales_order/sales_order.html"
+                >Completeing a Sales order</a
+              >
+            </li>
+            <li class="nav-mobile__link product">
+              <a href="./pages/productivity_page/productivity_activity.html"
+                >View Product Activity</a
+              >
+            </li>
+            <li class="nav-mobile__link manage">
+              <a href="./pages/manage_undelivered/manage_undelivered.html"
+                >Manage undelivered</a
+              >
+            </li>
+            <li class="nav-mobile__link">
+              <a href="./pages/view_sales_activity/view_sales_activity.html"
+                >Sales activity</a
+              >
+            </li>
+            <li class="nav-mobile__link">
+              <a href="./pages/delivery/delivery.html">Delivery Notes</a>
+            </li>
+          </ul>
         </div>
-
-    </div>
-    <div class="logo">
-        <img class="title-image" src="./images/STORIS-Logo.png" alt="storis logo">
-    </div>
-    
-</nav>
-
-
-
-    
-
-
+      </div>
+      <div class="logo">
+        <img
+          class="title-image"
+          src="./images/STORIS-Logo.png"
+          alt="storis logo"
+        />
+      </div>
+    </nav>
 
     <div class="main-reference__container">
-        <h1>Storis Sales Guide</h1>
+      <h1>Storis Sales Guide</h1>
 
-        <!-- <label>Main</label><br>
+      <!-- <label>Main</label><br>
         <img src="./images/field-1-1.jpeg" onclick="enlargeMain()" id="fieldOne" style="width: 10vw"><br>
         <label>Inquiry Screen</label><br>
         <img src="./images/field-1-2.jpeg" onclick="enlargeInquiry()" id="fieldTwo" style="width: 10vw"><br> -->
 
-    
-
-        <p class="main-reference__items"></p>
-            <!-- <li class="main-reference__item">1,1,1 Sales Order Entry <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
+      <p class="main-reference__items"></p>
+      <!-- <li class="main-reference__item">1,1,1 Sales Order Entry <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
             <li class="main-reference__item">1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer
             Inquiry.<button class='buttonClass' onclick="PlayProductActivity()">View Product Activity</button></li>
             <li class="main-reference__item">1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales <button
@@ -61,269 +73,21 @@
                 Order</a></li><br>
             <li class="main-reference__item">1, 2, 24, 2 Work Undelivered Report <button class="buttonClass show-manage-open-orders">View and Manage Open
                 Orders</button> -->
-            <!-- <li class="main-reference__item">
+      <!-- <li class="main-reference__item">
                 <a href="./glossary.html">Glossary</a></li> -->
-         <!-- </ul> -->
+      <!-- </ul> -->
     </div>
-
-    <div class="salesOrder hidden" id="salesOrderNotes">
-        <ol>
-            <li>Open "Enter a Sales Order" <img src="./images/salesorder.jpeg" id="salesOrderExample"
-                    onclick="openSalesOrder()" style='width: 25px'> </li>
-            <li>Click the Green Button</li>
-            <li>Select order type: sales order or Sales Quote</li>
-            <li>Input Sales Person Number<button class='buttonClass' id="multSalesPeople"
-                    onclick="multipleSalesPerson()">Multiple People</button></li>
-            <ol class="hidden" id="salesPerson"  type="a">
-                <li>Type an associate number in the salesperson field or push the action button (3 dots) and click
-                    "Multiple Commision Entry" to enter additional salespeople.</li>
-                <li>Enter additional associate numbers and then press enter or the search icon. </li>
-                <li>Push the green plus to add or the blue circle with the arrow to change the salesperson that you want
-                    to add. * you can also search for salespeople with the magnifying glass. </li>
-                <li>If you want to remove a salesperson then douple click a salespersons name and click the red minus
-                    button.</li>
-                <li>click save when complete. </li>
-                <li>Click ok when it asks to split the commision evenly</li>
-            </ol>
-            <li>Search for a customer by phone number, if unknown, click the magnifying glass and fill out the known
-                info on the left. Push search and double click the customer</li>
-            <li>Select Merchandise Tab on Left Side </li>
-            <li>Enter SKU under product and push tab or click the magnifying glass . if unknown then select <button
-                    class='buttonClass' onclick="displaySearchTips()" id="searchTips">select search</button><img
-                    src="./images/merchandise.jpeg" id="merchandiseImage" onclick="openMerchandiseScreen()"
-                    class="exampleImage" style="width: 25px;"> </li>
-            <ol id="search" class="hidden" type="a">
-                <li>Product field is only used for SKU's</li>
-                <li>Description has to match the buyers description and word order </li>
-                <li>Vender is the short vender code ex: MND, PAHO, SHTF and etc. <bold>This must be capitalized</bold>
-                    </bold>
-                    </emp>
-                </li>
-                <li>Click Search <img src="./images/search.jpeg" class="exampleImage" onclick="openSearchScreen()"
-                        id="searchImage"></li>
-                <li>Check boxes to the left of product on all items that the customer wants</li>
-                <li>Click Save</li>
-            </ol>
-            <li>Select the quanity of the item that the customer wants</li>
-            <li>Input all individual coupon codes </li>
-            <li>Select AS is button if it is as is. (You can search for it if needed)</li>
-            <li> Select save and add another to add another item to ticket and repeat previous steps or select Save to
-                move on.</li>
-            <li>Modify Order ** if you only see SKU numbers then do as follows:<button class='buttonClass'
-                    onclick="openModifyInstructions()" id="modifyInstructions">steps</button></li>
-            <ol type='a' id="DescriptionField" class="hidden">
-                <li>Left click above item field</li>
-                <li>A drop down should appear</li>
-                <li>Select the box next to description</li>
-                <li>Deselect extended price</li>
-                <li>Click off of the drop down bar</li>
-            </ol>
-            <ol id="changeOrder">
-                <li>
-                    <emp class=" clickable">Remove Item</emp> - click the red remove button next to item
-                </li>
-                <li>
-                    <emp class=" clickable">Adjust Quantity</emp> - double click on the item and change quanitity field
-                    and then click save.</emp>
-                </li>
-            </ol>
-            <li>Select Fulfilment on left side of screen (exit the fab screen) <img src="./images/fullfilment.jpeg"
-                    style="width: 25px;" id="fullfilmentImage" onclick="openFullfilmentScreen()"></li>
-            <li>Select Fulfilment date: if unsure, select "customer will call" in the status field</li>
-            <li>Select Fulfilment type from Method: Delivery, Customer take with, Customer Pick Up</li>
-            <li>under handling method: select if there are special notes for delivery. (leave in box or etc ) This is
-                rare.
-
-            <li>Verify Address: if wrong, click 3 dots and fill out info and click save</li>
-            <li>If multiple deliveries are required follow <button class='buttonClass' id='multipleFullfilments'
-                    onclick='openFulfilmentInstructions()'> these steps</button></li>
-            <ol type='a' class="hidden" id="FulfilmentInstructions">
-                <li>Click New Fulfilment and accept that another delivery already exists. </li>
-                <li>Double click route code for new fullfilment.</li>
-                <li>Add Fulfilment Method for each one(click the arrow button between selections) and select date</li>
-
-                <li>Click the lines button at the bottom</li>
-                <li>Click the boxes to the left of the items for each fulfilment, push the arrow after each one. **You
-                    can verify the fulfilment info for each fulfilment in the middle/upper fullfilment box</li>
-                <li>If you get an alert that you can't change the items on a fulfillment on a particular selection. Push
-                    the left arrow next to fullfilments to go to the first one. It will now let you.
-                <li>Once you've selected items for all the available fullfilments, Click the exit button. it will prompt
-                    you t o save or discard the changes. PUSH NO TO SAVE THE SELECTIONS</li>
-                <li>Click the exit button</li>
-
-            </ol>
-            <li>Click the payment button on the left side of the screen <img src="./images/payment.jpeg"
-                    style="width: 25px;" id="paymentImage" onclick="openPaymentImage()"></li>
-            <li>Discount code field: Use the scroll down box to select any discounts. </li>
-            <li>Push the 3 dots in the deposit section to Pay with card.</li>
-            <ol type="a">
-                <li>Click the magnifying glass and double click yhe vender type</li>
-                <li>Type in card number</li>
-
-                <li>Select month and year from drop down box and put in cvv number and amount</li>
-            </ol>
-            <li>Push the 3 dots in the finance section to Pay with credit</li>
-            <li>Push Save</li>
-            <li>Select the printer</li>
-            <li>Choose your print options (by fulfilment if there are multipe fullfilments or by room if you have
-                multiple rooms assigned</li>
-        </ol>
-        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
-    </div>
-
 
     <!--  productivity notes
 
 -->
 
-
-    <div class='hidden' id="ProductivityNotes" >
-        <ol>
-            <li>Select View Product Activity</li>
-            <li>Enter SKU in product push tab or click magnifying glass.</li>
-            <ol>
-                <li>Location Availibility</li>
-                <ol>
-                    <li>Merchandise shows selling price and the suggested retail price</li>
-                    <li>Location section at the bottom shows available pieces, as- is items for stores and if still
-                        available.</li>
-                    <li> You can push the action button (3 dots) in order to search for related items. This will
-                        automatically fill in the search fields to find all items in the collection.</li>
-                    <ol type="a">
-                        <li>You can select multiple items by checking the box to the left of the product.</li>
-                        <li>Click Save</li>
-                    </ol>
-                    <li>Check availability of Current Item, if multiples are selected then push next to see the next
-                        items availability.</li>
-
-
-                </ol>
-                <li>Purchase order tab on left.</li>
-                <ol type="a">
-                    <li>Shows Po number, vender, quantity due, status and dock schedule.</li>
-                </ol>
-                <li>Open order screen on left</li>
-                <ol type="a">
-                    <li>PUSH THE 3 DOTS NEXT TO LOCATION AND SELECT ALL LOCATIONS. </li>
-                    <li>Sort by order type (sales are orders)</li>
-                    <li>Double click order to enter ticket</li>
-                    <li>If in a loop: go to fulfillment and change status to "customer will call"</li>
-                </ol>
-                <li>Serial Reference on left side</li>
-                <ol type="a">
-                    <li>Select Location</li>
-                    <li>Shows received date, LOCATION , order number if sold special order status</li>
-                </ol>
-                <li>As-Is</li>
-                <ol type="a">
-                    <li>Shows serial number, status, reason, sellable, and special order info.</li>
-                </ol>
-            </ol>
-
-
-        </ol>
-        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
-    </div>
-
-
     <!--sales activity section-->
-
-
-    <div class="hidden" id="viewSalesActivityNotes" >
-        <ol>
-            <li>Open View Salesperson Activity</li>
-            <ol>
-                <li>general screen shows open order totals/ layaway totals: MTD written and MTD delivered sales.</li>
-                <ol type="a">
-                    <li>Double clicking opens orders allows you to enter tickets</li>
-                </ol>
-                <li>Completed orders is orders you've delivered. ** you can change the date range above order.</li>
-                <li>Canceled orders are voided orders</li>
-                <li>quotes are orders in quote status.</li>
-
-            </ol>
-
-        </ol>
-        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
-    </div>
 
     <!--delivery notes-->
 
-    <section class = "hidden" id="deliveryNotes" >
-        <ol>
-            <li>Open ENTER A SALES ORDER.</li>
-            <li>Click Action Button (3 dots)</li>
-            <li>Fill in zip and push tap or click Route</li>
-            <li>Select Route</li>
-            <li>Click calender next to date</li>
-            <li>View Schedule</li>
-            <li>Click Clear to check different route</li>
-        </ol>
-        <button class='buttonClass' id='closeInstructions' onclick="closeInstructions()">close</button>
-    </section>
+    <!-- mangage open orders section   NEW CONTENT-->
 
-     <!-- mangage open orders section   NEW CONTENT-->
-    <section class="manage-open-orders hidden" id="'manage-open-orders" >
-        <ol>
-            <li>Open view and manage open orders</li>
-            <li>Set Options</li>
-            <ul>
-                <li>selling location: store</li>
-                <li>Fulfillment location:</li>
-                <ol>
-                    <li>click magnifying glass</li>
-                    <li>Select All Warehouses</li>
-                </ol>
-                <li>Input sales persons number</li>
-                <li>order dates and fulfillment dates should be changed. Default should be cytd (current year to Date)
-                </li>
-            </ul>
-            <li>click Search</li>
-            <li>To update a ticket click maintain</li>
-            <ol>
-                <li>Customer Section</li>
-                <ul>
-                    <li><button class="buttonClass show-add-notes">add notes:</button></li>
-                    <div class="add-notes" class="hidden">
-                        <ol>
-                            <li>Click action button (3 dots)</li>
-                            <li>Select <emp>add additional comments</emp>
-                            </li>
-                            <li>Update information</li>
-                            <li>Click save</li>
-                        </ol>
-                    </div>
-                    <li><button class="buttonClass show-audit-comments">Audit Comments (show modifications)</button>
-                    </li>
-                    <div class="hidden audit-comments" >
-                        <ol>
-                            <li>Click action button</li>
-                            <li>select audit comments to see modifications</li>
-                        </ol>
-                    </div>
-                    <li><button class="buttonClass show-delivery-instructions">Show Delivery Instructions</button></li>
-                    <div class=" hidden delivery-instructions">
-                        <ol>
-                            <li>Click Action Button</li>
-                            <li>Click Update customer address</li>
-                            <li>Under extended Delivery instructions **fill out for small truck or gates, it will
-                                include notes on all future deliveries</li>
-                        </ol>
-                    </div>
-                </ul>
-            </ol>
-            <li>Other columns of interest</li>
-            <ul>
-                <li>Fulfillment Sttus: scheduled, pickup, estimated or cwc (customer will call when ready to schedule
-                </li>
-                <li>Stock Location</li>
-                <li>Fulfillment requested date: date estimated to customer if enterred at time of purchase</li>
-            </ul>
-        </ol>
-    </section>
-
-   
     <!-- <script src="learning-storis.js"></script> -->
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Storis</title>
+    <link href="../../learning-storis.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width" />
+    <script
+      src="https://kit.fontawesome.com/dba77b6ef4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/reference_items.js" defer></script>
+    <script src="../../mobile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p class="nav-mobile__menu--toggle"><i class="fa-solid fa-bars"></i></p>
+      </div>
+      <div class="nav-mobile__container">
+        <div class="nav-mobile__menu">
+          <ul class="nav-mobile__links">
+            <li class="nav-mobile__link"></li>
+            <li class="nav-mobile__link">
+              <a href="../../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../sales_order/sales_order.html"
+                >Completeing a Sales order</a
+              >
+            </li>
+            <li class="nav-mobile__link product">
+              <a href="../productivity_page/productivity_activity.html"
+                >View Product Activity</a
+              >
+            </li>
+            <li class="nav-mobile__link manage">
+              <a href="../manage_undelivered/manage_undelivered.html"
+                >Manage undelivered</a
+              >
+            </li>
+
+            <li class="nav-mobile__link">
+              <a href="../delivery/delivery.html">Delivery Notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <img
+          class="title-image"
+          src="../../images/STORIS-Logo.png"
+          alt="storis logo"
+        />
+      </div>
+    </nav>
+    <div id="viewSalesActivityNotes">
+      <ol>
+        <li>Open View Salesperson Activity</li>
+        <ol>
+          <li>
+            general screen shows open order totals/ layaway totals: MTD written
+            and MTD delivered sales.
+          </li>
+          <ol type="a">
+            <li>Double clicking opens orders allows you to enter tickets</li>
+          </ol>
+          <li>
+            Completed orders is orders you've delivered. ** you can change the
+            date range above order.
+          </li>
+          <li>Canceled orders are voided orders</li>
+          <li>quotes are orders in quote status.</li>
+        </ol>
+      </ol>
+      <button
+        class="buttonClass"
+        id="closeInstructions"
+        onclick="closeInstructions()"
+      >
+        close
+      </button>
+    </div>
+  </body>
+</html>

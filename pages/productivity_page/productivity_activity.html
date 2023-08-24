@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning Storis</title>
+    <link href="../../learning-storis.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= device-width" />
+    <script
+      src="https://kit.fontawesome.com/dba77b6ef4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../assets/reference_items.js" defer></script>
+    <script src="../../mobile.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p class="nav-mobile__menu--toggle"><i class="fa-solid fa-bars"></i></p>
+      </div>
+      <div class="nav-mobile__container">
+        <div class="nav-mobile__menu">
+          <ul class="nav-mobile__links">
+            <li class="nav-mobile__link">
+              <a href="../../index.html">Home</a>
+            </li>
+            <li class="nav-mobile__link">
+              <a href="../sales_order/sales_order.html"
+                >Completeing a Sales order</a
+              >
+            </li>
+
+            <li class="nav-mobile__link manage">
+              <a href="../manage_undelivered/manage_undelivered.html"
+                >Manage undelivered</a
+              >
+            </li>
+            <li class="nav-mobile__link">
+              <a href="#viewSalesActivityNotes">Sales activity</a>
+            </li>
+            <li class="nav-mobile__link">
+              <a href="#deliveryNotes">Delivery Notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="logo">
+        <img
+          class="title-image"
+          src="../../images/STORIS-Logo.png"
+          alt="storis logo"
+        />
+      </div>
+    </nav>
+    <div id="ProductivityNotes">
+      <ol>
+        <li>Select View Product Activity</li>
+        <li>Enter SKU in product push tab or click magnifying glass.</li>
+        <ol>
+          <li>Location Availibility</li>
+          <ol>
+            <li>
+              Merchandise shows selling price and the suggested retail price
+            </li>
+            <li>
+              Location section at the bottom shows available pieces, as- is
+              items for stores and if still available.
+            </li>
+            <li>
+              You can push the action button (3 dots) in order to search for
+              related items. This will automatically fill in the search fields
+              to find all items in the collection.
+            </li>
+            <ol type="a">
+              <li>
+                You can select multiple items by checking the box to the left of
+                the product.
+              </li>
+              <li>Click Save</li>
+            </ol>
+            <li>
+              Check availability of Current Item, if multiples are selected then
+              push next to see the next items availability.
+            </li>
+          </ol>
+          <li>Purchase order tab on left.</li>
+          <ol type="a">
+            <li>
+              Shows Po number, vender, quantity due, status and dock schedule.
+            </li>
+          </ol>
+          <li>Open order screen on left</li>
+          <ol type="a">
+            <li>PUSH THE 3 DOTS NEXT TO LOCATION AND SELECT ALL LOCATIONS.</li>
+            <li>Sort by order type (sales are orders)</li>
+            <li>Double click order to enter ticket</li>
+            <li>
+              If in a loop: go to fulfillment and change status to "customer
+              will call"
+            </li>
+          </ol>
+          <li>Serial Reference on left side</li>
+          <ol type="a">
+            <li>Select Location</li>
+            <li>
+              Shows received date, LOCATION , order number if sold special order
+              status
+            </li>
+          </ol>
+          <li>As-Is</li>
+          <ol type="a">
+            <li>
+              Shows serial number, status, reason, sellable, and special order
+              info.
+            </li>
+          </ol>
+        </ol>
+      </ol>
+      <button
+        class="buttonClass"
+        id="closeInstructions"
+        onclick="closeInstructions()"
+      >
+        close
+      </button>
+    </div>
+  </body>
+</html>
