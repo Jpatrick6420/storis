@@ -59,12 +59,10 @@ const instructionTopics = [
 //   navMobileLinks.insertAdjacentHTML("afterbegin", html);
 // });
 
-product.addEventListener("click", function (e) {
-  closeAll();
-  productivityNotes.classList.remove("hidden");
-});
+// product.addEventListener("click", function (e) {
+//   productivityNotes.classList.remove("hidden");
+// });
 
 manage.addEventListener("click", function (e) {
-  closeAll();
   manageOpenOrdersNotes.classList.remove("hidden");
 });

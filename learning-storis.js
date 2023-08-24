@@ -1,4 +1,3 @@
-const multipleSalesPersonButton = document.querySelector("#multSalesPeople");
 const salesimages = [
   "./images/salesorder.jpeg",
   "./images/customerScreen.jpeg",
@@ -15,43 +14,10 @@ const descriptionField = document.getElementById("DescriptionField");
 const fulfilmentInstructions = document.getElementById(
   "FulfilmentInstructions"
 );
-const merchandiseImage = document.querySelector("#merchandiseImage");
-
-const salesPerson = document.getElementById("salesPerson");
+// const merchandiseImage = document.querySelector("#merchandiseImage");
 
 const multSalesPeople = document.getElementById("multSalesPeople");
 
-const salesorderExample = document.getElementById("salesOrderExample");
-
-salesorderExample.addEventListener("click", function () {
-  enlargePicture(salesorderExample);
-});
-
-//other sections
-// const productivity = document.getElementById("ProductivityNotes");
-// const salesActivity = document.getElementById("viewSalesActivityNotes");
-
-// //close button
-// const CloseButton = document.getElementById("closeInstructions");
-
-// function enlargeMain() {
-//   main.style.width === "10vw"
-//     ? (main.style.width = "50vw")
-//     : (main.style.width = "10vw");
-// }
-// function enlargeInquiry() {
-//   inquiry.style.width === "10vw"
-//     ? (inquiry.style.width = "50vw")
-//     : (inquiry.style.width = "10vw");
-// }
-
-//Sales functions
-
-// function Tutorial() {
-//   salesOrderNotes.style.display === "none"
-//     ? (salesOrderNotes.style.display = "block")
-//     : (salesOrderNotes.style.display = "none");
-// }
 const openMenu = (screen) =>
   (screen.style.display = screen.style.display === "none" ? "block" : "none");
 
@@ -65,34 +31,23 @@ function openModifyInstructions() {
 function openFulfilmentInstructions() {
   openMenu(fulfilmentInstructions);
 }
-multipleSalesPersonButton.addEventListener("click", function (e) {
-  openMenu(salesPerson);
-});
 
 const enlargePicture = (picture) =>
   (picture.style.width = picture.style.width === "25px" ? "400px" : "25px");
 
-function openMerchandiseScreen() {
-  enlargePicture(merchandiseImage);
-}
+// function openMerchandiseScreen() {
+//   enlargePicture(merchandiseImage);
+// }
 
 function openSearchScreen() {
-  document.getElementById("searchImage").style.width === "25px"
-    ? (document.getElementById("SearchImage").style.width = "800px")
-    : (document.getElementById("searchImage").style.width = "25px");
+  enlargePicture(document.getElementById("searchImage"));
 }
 
 function openFullfilmentScreen() {
   enlargePicture(document.getElementById("fullfilmentImage"));
 }
-merchandiseImage.addEventListener("click", function () {
-  enlargePicture(merchandiseImage);
-});
 
 function openPaymentImage() {
-  // document.getElementById("paymentImage").style.width === "25px"
-  //   ? (document.getElementById("paymentImage").style.width = "800px")
-  //   : (document.getElementById("paymentImage").style.width = "25px");
   enlargePicture(document.getElementById("paymentImage"));
 }
 
@@ -114,13 +69,13 @@ function DeliverySchedule() {
 
 //closes all tutorial windows
 
-function closeInstructions() {
-  salesOrderNotes.style.display = "none";
-  modifyInstructions.style.display = "none";
-  salesActivity.style.display = "none";
-  productivity.style.display = "none";
-  delivery.style.display = "none";
-}
+// function closeInstructions() {
+//   salesOrderNotes.style.display = "none";
+//   modifyInstructions.style.display = "none";
+//   salesActivity.style.display = "none";
+//   productivity.style.display = "none";
+//   delivery.style.display = "none";
+// }
 
 // manage open orders section
 
@@ -138,15 +93,3 @@ const auditComments = document.querySelector(".audit-comments");
 const showDeliveryInstructions = document.querySelector(
   ".show-delivery-instructions"
 );
-const deliveryInstructions = document.querySelector(".delivery-instructions");
-
-showAddNotes.addEventListener("click", () => {
-  openMenu(addNotes);
-});
-showAuditComments.addEventListener("click", () => {
-  openMenu(auditComments);
-});
-
-showDeliveryInstructions.addEventListener("click", () => {
-  openMenu(deliveryInstructions);
-});

@@ -39,4 +39,4 @@ referenceTopics.map((topic) => {
 
   referenceSection.insertAdjacentHTML("afterbegin", topicMarkup);
 });
-console.log(referenceTopics);
+// console.log(referenceTopics);
