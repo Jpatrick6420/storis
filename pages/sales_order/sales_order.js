@@ -2,6 +2,11 @@ const salesOrderExample = document.querySelector("#salesOrderExample");
 const multSalesPersonButton = document.querySelector("#multSalesPeople");
 const salesPerson = document.querySelector("#salesPerson");
 const merchandiseImage = document.querySelector("#merchandiseImage");
+const payWithCard = document.querySelector("#pay-with-card");
+const creditCardInstructions = document.querySelector(
+  "#credit-card-instructions"
+);
+
 const expandImage = (pic) => {
   pic.style.width = pic.style.width === "25px" ? "400px" : "25px";
 };
@@ -21,4 +26,8 @@ multSalesPersonButton.addEventListener("click", function () {
 });
 salesOrderExample.addEventListener("click", function () {
   expandImage(salesOrderExample);
+});
+
+payWithCard.addEventListener("click", function () {
+  removeHidden(creditCardInstructions);
 });
