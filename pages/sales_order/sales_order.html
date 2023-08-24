@@ -9,8 +9,9 @@
       src="https://kit.fontawesome.com/dba77b6ef4.js"
       crossorigin="anonymous"
     ></script>
-    <script src="../../assets/reference_items.js" defer></script>
+    <!-- <script src="../../assets/reference_items.js" defer></script> -->
     <script src="../../mobile.js" defer></script>
+    <script src="../../learning-storis.js" defer></script>
   </head>
   <body>
     <nav>
@@ -52,14 +53,13 @@
         />
       </div>
     </nav>
-    <div class="salesOrder" id="salesOrderNotes">
+    <div class="instruction-section" id="salesOrderNotes">
       <ol>
         <li>
           Open "Enter a Sales Order"
           <img
-            src="./images/salesorder.jpeg"
+            src="../../images/salesorder.jpeg"
             id="salesOrderExample"
-            onclick="openSalesOrder()"
             style="width: 25px"
           />
         </li>
@@ -69,7 +69,6 @@
           Input Sales Person Number<button
             class="buttonClass"
             id="multSalesPeople"
-            onclick="multipleSalesPerson()"
           >
             Multiple People
           </button>
@@ -112,9 +111,8 @@
           >
             select search</button
           ><img
-            src="./images/merchandise.jpeg"
+            src="../../images/merchandise.jpeg"
             id="merchandiseImage"
-            onclick="openMerchandiseScreen()"
             class="exampleImage"
             style="width: 25px"
           />
@@ -131,7 +129,7 @@
           <li>
             Click Search
             <img
-              src="./images/search.jpeg"
+              src="../../images/search.jpeg"
               class="exampleImage"
               onclick="openSearchScreen()"
               id="searchImage"
@@ -168,7 +166,7 @@
           <li>Deselect extended price</li>
           <li>Click off of the drop down bar</li>
         </ol>
-        <ol id="changeOrder">
+        <ol id="changeOrder" class="hidden">
           <li>
             <emp class="clickable">Remove Item</emp> - click the red remove
             button next to item
@@ -181,7 +179,7 @@
         <li>
           Select Fulfilment on left side of screen (exit the fab screen)
           <img
-            src="./images/fullfilment.jpeg"
+            src="../../images/fullfilment.jpeg"
             style="width: 25px"
             id="fullfilmentImage"
             onclick="openFullfilmentScreen()"
@@ -247,7 +245,7 @@
         <li>
           Click the payment button on the left side of the screen
           <img
-            src="./images/payment.jpeg"
+            src="../../images/payment.jpeg"
             style="width: 25px"
             id="paymentImage"
             onclick="openPaymentImage()"
@@ -274,13 +272,6 @@
           fullfilments or by room if you have multiple rooms assigned
         </li>
       </ol>
-      <button
-        class="buttonClass"
-        id="closeInstructions"
-        onclick="closeInstructions()"
-      >
-        close
-      </button>
     </div>
   </body>
 </html>

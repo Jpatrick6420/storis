@@ -59,11 +59,6 @@ const instructionTopics = [
 //   navMobileLinks.insertAdjacentHTML("afterbegin", html);
 // });
 
-order.addEventListener("click", function (e) {
-  closeAll();
-  salesOrderNotes.classList.remove("hidden");
-});
-
 product.addEventListener("click", function (e) {
   closeAll();
   productivityNotes.classList.remove("hidden");
@@ -72,13 +67,4 @@ product.addEventListener("click", function (e) {
 manage.addEventListener("click", function (e) {
   closeAll();
   manageOpenOrdersNotes.classList.remove("hidden");
-});
-
-salesActivity.addEventListener("click", function (e) {
-  closeAll();
-  removeHiddenClass(viewSalesActivityNotes);
-});
-delivery.addEventListener("click", function (e) {
-  closeAll();
-  removeHiddenClass(deliveryNotes);
 });

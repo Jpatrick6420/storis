@@ -1,14 +1,4 @@
-// const main = document.getElementById("fieldOne");
-// const inquiry = document.getElementById("fieldTwo");
-// const minimize = document.getElementById("reset");
-// const training = document.getElementById("tutorial");
-// const hideVideo = document.getElementById("antiVideo");
-// const instruction = document.getElementById("manual");
-
-// search button
-
-//sales order var
-
+const multipleSalesPersonButton = document.querySelector("#multSalesPeople");
 const salesimages = [
   "./images/salesorder.jpeg",
   "./images/customerScreen.jpeg",
@@ -25,12 +15,17 @@ const descriptionField = document.getElementById("DescriptionField");
 const fulfilmentInstructions = document.getElementById(
   "FulfilmentInstructions"
 );
+const merchandiseImage = document.querySelector("#merchandiseImage");
 
 const salesPerson = document.getElementById("salesPerson");
 
 const multSalesPeople = document.getElementById("multSalesPeople");
 
 const salesorderExample = document.getElementById("salesOrderExample");
+
+salesorderExample.addEventListener("click", function () {
+  enlargePicture(salesorderExample);
+});
 
 //other sections
 // const productivity = document.getElementById("ProductivityNotes");
@@ -39,16 +34,16 @@ const salesorderExample = document.getElementById("salesOrderExample");
 // //close button
 // const CloseButton = document.getElementById("closeInstructions");
 
-function enlargeMain() {
-  main.style.width === "10vw"
-    ? (main.style.width = "50vw")
-    : (main.style.width = "10vw");
-}
-function enlargeInquiry() {
-  inquiry.style.width === "10vw"
-    ? (inquiry.style.width = "50vw")
-    : (inquiry.style.width = "10vw");
-}
+// function enlargeMain() {
+//   main.style.width === "10vw"
+//     ? (main.style.width = "50vw")
+//     : (main.style.width = "10vw");
+// }
+// function enlargeInquiry() {
+//   inquiry.style.width === "10vw"
+//     ? (inquiry.style.width = "50vw")
+//     : (inquiry.style.width = "10vw");
+// }
 
 //Sales functions
 
@@ -57,48 +52,28 @@ function enlargeInquiry() {
 //     ? (salesOrderNotes.style.display = "block")
 //     : (salesOrderNotes.style.display = "none");
 // }
-
-function cierreVideo() {
-  training.style.display === "none";
-  hideVideo.style.display = "none";
-  salesOrderNotes.style.display = "none";
-}
+const openMenu = (screen) =>
+  (screen.style.display = screen.style.display === "none" ? "block" : "none");
 
 function displaySearchTips() {
-  search.style.display === "none"
-    ? (search.style.display = "block")
-    : (search.style.display = "none");
+  openMenu(search);
 }
 function openModifyInstructions() {
-  if (descriptionField.style.display === "none") {
-    descriptionField.style.display = "block";
-  } else {
-    descriptionField.style.display = "none";
-  }
+  openMenu(descriptionField);
 }
 
 function openFulfilmentInstructions() {
-  fulfilmentInstructions.style.display === "none"
-    ? (fulfilmentInstructions.style.display = "block")
-    : (fulfilmentInstructions.style.display = "none");
+  openMenu(fulfilmentInstructions);
 }
+multipleSalesPersonButton.addEventListener("click", function (e) {
+  openMenu(salesPerson);
+});
 
-function multipleSalesPerson() {
-  salesPerson.style.display === "none"
-    ? (salesPerson.style.display = "block")
-    : (salesPerson.style.display = "none");
-}
-
-function openSalesOrder() {
-  salesOrderExample.style.width === "25px"
-    ? (salesOrderExample.style.width = "800px")
-    : (salesOrderExample.style.width = "25px");
-}
+const enlargePicture = (picture) =>
+  (picture.style.width = picture.style.width === "25px" ? "400px" : "25px");
 
 function openMerchandiseScreen() {
-  document.getElementById("merchandiseImage").style.width === "25px"
-    ? (document.getElementById("merchandiseImage").style.width = "800px")
-    : (document.getElementById("merchandiseImage").style.width = "25px");
+  enlargePicture(merchandiseImage);
 }
 
 function openSearchScreen() {
@@ -108,37 +83,33 @@ function openSearchScreen() {
 }
 
 function openFullfilmentScreen() {
-  document.getElementById("fullfilmentImage").style.width === "25px"
-    ? (document.getElementById("fullfilmentImage").style.width = "800px")
-    : (document.getElementById("fullfilmentImage").style.width = "25px");
+  enlargePicture(document.getElementById("fullfilmentImage"));
 }
+merchandiseImage.addEventListener("click", function () {
+  enlargePicture(merchandiseImage);
+});
 
 function openPaymentImage() {
-  document.getElementById("paymentImage").style.width === "25px"
-    ? (document.getElementById("paymentImage").style.width = "800px")
-    : (document.getElementById("paymentImage").style.width = "25px");
+  // document.getElementById("paymentImage").style.width === "25px"
+  //   ? (document.getElementById("paymentImage").style.width = "800px")
+  //   : (document.getElementById("paymentImage").style.width = "25px");
+  enlargePicture(document.getElementById("paymentImage"));
 }
 
 //Productivity Information
 
 function PlayProductActivity() {
-  productivity.style.display === "none"
-    ? (productivity.style.display = "block")
-    : (productivity.style.display = "none");
+  openMenu(productivity);
 }
 
 //sales activity functions
 
 function PlaySalesActivity() {
-  salesActivity.style.display === "none"
-    ? (salesActivity.style.display = "block")
-    : (salesActivity.style.display = "none");
+  openMenu(salesActivity);
 }
 
 function DeliverySchedule() {
-  delivery.style.display === "none"
-    ? (delivery.style.display = "block")
-    : (delivery.style.display = "none");
+  openMenu(delivery);
 }
 
 //closes all tutorial windows
@@ -149,7 +120,6 @@ function closeInstructions() {
   salesActivity.style.display = "none";
   productivity.style.display = "none";
   delivery.style.display = "none";
-  showManageOpenOrders.style.display = "none";
 }
 
 // manage open orders section
@@ -171,18 +141,12 @@ const showDeliveryInstructions = document.querySelector(
 const deliveryInstructions = document.querySelector(".delivery-instructions");
 
 showAddNotes.addEventListener("click", () => {
-  addNotes.style.display === "none"
-    ? (addNotes.style.display = "block")
-    : (addNotes.style.display = "none");
+  openMenu(addNotes);
 });
 showAuditComments.addEventListener("click", () => {
-  auditComments.style.display === "none"
-    ? (auditComments.style.display = "block")
-    : (auditComments.style.display = "none");
+  openMenu(auditComments);
 });
 
 showDeliveryInstructions.addEventListener("click", () => {
-  deliveryInstructions.style.display === "none"
-    ? (deliveryInstructions.style.display = "block")
-    : (deliveryInstructions.style.display = "none");
+  openMenu(deliveryInstructions);
 });

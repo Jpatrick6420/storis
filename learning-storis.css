@@ -2,7 +2,7 @@
   font-size: 20px;
   font-weight: 500;
   box-sizing: border-box;
-  background-color: #78c3e0;
+  /* background-color: #78c3e0; */
   color: #06283d;
   margin: 0;
   padding: 0;
@@ -131,4 +131,8 @@ emp.clickable {
 
 button {
   width: 300px;
+}
+
+.instruction-section {
+  padding-left: 1.6rem;
 }
