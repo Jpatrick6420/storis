@@ -2,16 +2,12 @@
   font-size: 20px;
   font-weight: 500;
   box-sizing: border-box;
-  /* background-color: #78c3e0; */
+
   color: #06283d;
   margin: 0;
   padding: 0;
 }
 
-/* bold {
-  font-weight: 700;
-  color: red;
-} */
 nav {
   display: flex;
   align-items: center;
@@ -74,22 +70,10 @@ nav p {
 .hidden {
   display: none;
 }
-/* h1 {
-  font-size: 30px;
-} */
 
-/* .search-field {
-  display: flex;
-} */
-
-/* .exampleImage {
-  width: 25px;
-  padding-left: 3px;
-} */
-
-emp.clickable {
+/* emp.clickable {
   color: #47b5ff;
-}
+} */
 
 .buttonClass {
   font-size: 0.6rem;
