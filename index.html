@@ -6,50 +6,67 @@
     <link href="learning-storis.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width= device-width">
+    <script src="https://kit.fontawesome.com/dba77b6ef4.js" crossorigin="anonymous"></script>
+    <script src = './assets/reference_items.js'  defer></script>
+    <script src ='./mobile.js' defer></script>
 </head>
+<body>
 <nav>
     <div>
+        <p class="nav-mobile__menu--toggle"><i class="fa-solid fa-bars"></i></p>
+    </div>
+    <div class="nav-mobile__container">
+        <div class="nav-mobile__menu">
+            <ul class="nav-mobile__links">
+                <li class="nav-mobile__link order"><p>Completeing Sales Order</p></li>
+                <li class="nav-mobile__link product"><a href="#ProductivityNotes">View Product Activity</a></li>
+                <li class="nav-mobile__link manage"><a href="#manage-open-orders">Manage undelivered</a></li>
+                <li class="nav-mobile__link"><a href="#viewSalesActivityNotes">Sales activity</a></li>
+                <li class="nav-mobile__link"><a href="#deliveryNotes">Delivery Notes</a></li>
+                
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="logo">
         <img class="title-image" src="./images/STORIS-Logo.png" alt="storis logo">
     </div>
-    <!-- <div class="search-field">
-        <label id="search-label" for="search">Search</label>
-        <input type="text" name="search" id="glossaryInput">
-        <button id="searchButton" type="submit">Go</button>
-    </div> -->
+    
 </nav>
 
-<body>
 
-    <div id='Unidata'>
-        <img src="./images/STORIS-Logo.png" style="width: 40%; position: relative; left: 30%" ;>
-    </div>
+
+    
 
 
 
-    <div>
+    <div class="main-reference__container">
         <h1>Storis Sales Guide</h1>
 
-        <label>Main</label><br>
+        <!-- <label>Main</label><br>
         <img src="./images/field-1-1.jpeg" onclick="enlargeMain()" id="fieldOne" style="width: 10vw"><br>
         <label>Inquiry Screen</label><br>
-        <img src="./images/field-1-2.jpeg" onclick="enlargeInquiry()" id="fieldTwo" style="width: 10vw"><br>
+        <img src="./images/field-1-2.jpeg" onclick="enlargeInquiry()" id="fieldTwo" style="width: 10vw"><br> -->
 
+    
+
+        <p class="main-reference__items"></p>
+            <!-- <li class="main-reference__item">1,1,1 Sales Order Entry <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
+            <li class="main-reference__item">1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer
+            Inquiry.<button class='buttonClass' onclick="PlayProductActivity()">View Product Activity</button></li>
+            <li class="main-reference__item">1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales <button
+                class='buttonClass' onclick="PlaySalesActivity()">View Sales Activity</button></li>
+            <li class="main-reference__item">1,2,16 Check Delivery Schedule <button class='buttonClass' onclick="DeliverySchedule()">Enter a Sales
+                Order</a></li><br>
+            <li class="main-reference__item">1, 2, 24, 2 Work Undelivered Report <button class="buttonClass show-manage-open-orders">View and Manage Open
+                Orders</button> -->
+            <!-- <li class="main-reference__item">
+                <a href="./glossary.html">Glossary</a></li> -->
+         <!-- </ul> -->
     </div>
 
-    <ul>
-        <li>1,1,1 Sales Order Entry <button class='buttonClass' onclick="Tutorial()">Enter a Sales Order</button></li>
-        <li>1,2 (1,10,11,15,22,23) Stock Availibility, Purchase order, Open Order Inquiry, Serial Tracking and Transfer
-            Inquiry.<button class='buttonClass' onclick="PlayProductActivity()">View Product Activity</button></li>
-        <li>1,2 (1,3,26) Open Orders, Invoiced Orders, Voided Orders, Undelivered, Daily Sales <button
-                class='buttonClass' onclick="PlaySalesActivity()">View Sales Activity</a></li>
-        <li>1,2,16 Check Delivery Schedule <button class='buttonClass' onclick="DeliverySchedule()">Enter a Sales
-                Order</a></li><br>
-        <li>1, 2, 24, 2 Work Undelivered Report <button class="buttonClass show-manage-open-orders">View and Manage Open
-                Orders</button>
-        <li><a href="./glossary.html">Glossary</a></li>
-    </ul>
-
-    <div class="salesOrder" id="salesOrderNotes" style="display: none;">
+    <div class="salesOrder hidden" id="salesOrderNotes">
         <ol>
             <li>Open "Enter a Sales Order" <img src="./images/salesorder.jpeg" id="salesOrderExample"
                     onclick="openSalesOrder()" style='width: 25px'> </li>
@@ -57,7 +74,7 @@
             <li>Select order type: sales order or Sales Quote</li>
             <li>Input Sales Person Number<button class='buttonClass' id="multSalesPeople"
                     onclick="multipleSalesPerson()">Multiple People</button></li>
-            <ol id="salesPerson" style="display: none;" type="a">
+            <ol class="hidden" id="salesPerson"  type="a">
                 <li>Type an associate number in the salesperson field or push the action button (3 dots) and click
                     "Multiple Commision Entry" to enter additional salespeople.</li>
                 <li>Enter additional associate numbers and then press enter or the search icon. </li>
@@ -75,7 +92,7 @@
                     class='buttonClass' onclick="displaySearchTips()" id="searchTips">select search</button><img
                     src="./images/merchandise.jpeg" id="merchandiseImage" onclick="openMerchandiseScreen()"
                     class="exampleImage" style="width: 25px;"> </li>
-            <ol id="search" style="display: none;" type="a">
+            <ol id="search" class="hidden" type="a">
                 <li>Product field is only used for SKU's</li>
                 <li>Description has to match the buyers description and word order </li>
                 <li>Vender is the short vender code ex: MND, PAHO, SHTF and etc. <bold>This must be capitalized</bold>
@@ -94,7 +111,7 @@
                 move on.</li>
             <li>Modify Order ** if you only see SKU numbers then do as follows:<button class='buttonClass'
                     onclick="openModifyInstructions()" id="modifyInstructions">steps</button></li>
-            <ol type='a' id="DescriptionField" style="display: none;">
+            <ol type='a' id="DescriptionField" class="hidden">
                 <li>Left click above item field</li>
                 <li>A drop down should appear</li>
                 <li>Select the box next to description</li>
@@ -120,7 +137,7 @@
             <li>Verify Address: if wrong, click 3 dots and fill out info and click save</li>
             <li>If multiple deliveries are required follow <button class='buttonClass' id='multipleFullfilments'
                     onclick='openFulfilmentInstructions()'> these steps</button></li>
-            <ol type='a' style="display: none;" id="FulfilmentInstructions">
+            <ol type='a' class="hidden" id="FulfilmentInstructions">
                 <li>Click New Fulfilment and accept that another delivery already exists. </li>
                 <li>Double click route code for new fullfilment.</li>
                 <li>Add Fulfilment Method for each one(click the arrow button between selections) and select date</li>
@@ -160,7 +177,7 @@
 -->
 
 
-    <div id="ProductivityNotes" style="display: none;">
+    <div class='hidden' id="ProductivityNotes" >
         <ol>
             <li>Select View Product Activity</li>
             <li>Enter SKU in product push tab or click magnifying glass.</li>
@@ -212,7 +229,7 @@
     <!--sales activity section-->
 
 
-    <div id="viewSalesActivityNotes" style="display: none;">
+    <div class="hidden" id="viewSalesActivityNotes" >
         <ol>
             <li>Open View Salesperson Activity</li>
             <ol>
@@ -232,7 +249,7 @@
 
     <!--delivery notes-->
 
-    <section id="deliveryNotes" style="display: none">
+    <section class = "hidden" id="deliveryNotes" >
         <ol>
             <li>Open ENTER A SALES ORDER.</li>
             <li>Click Action Button (3 dots)</li>
@@ -246,7 +263,7 @@
     </section>
 
      <!-- mangage open orders section   NEW CONTENT-->
-    <section class="manage-open-orders" style="display: none">
+    <section class="manage-open-orders hidden" id="'manage-open-orders" >
         <ol>
             <li>Open view and manage open orders</li>
             <li>Set Options</li>
@@ -267,7 +284,7 @@
                 <li>Customer Section</li>
                 <ul>
                     <li><button class="buttonClass show-add-notes">add notes:</button></li>
-                    <div class="add-notes" style="display: none">
+                    <div class="add-notes" class="hidden">
                         <ol>
                             <li>Click action button (3 dots)</li>
                             <li>Select <emp>add additional comments</emp>
@@ -278,14 +295,14 @@
                     </div>
                     <li><button class="buttonClass show-audit-comments">Audit Comments (show modifications)</button>
                     </li>
-                    <div class="audit-comments" style="display: none">
+                    <div class="hidden audit-comments" >
                         <ol>
                             <li>Click action button</li>
                             <li>select audit comments to see modifications</li>
                         </ol>
                     </div>
                     <li><button class="buttonClass show-delivery-instructions">Show Delivery Instructions</button></li>
-                    <div class="delivery-instructions" style="display: none">
+                    <div class=" hidden delivery-instructions">
                         <ol>
                             <li>Click Action Button</li>
                             <li>Click Update customer address</li>
@@ -304,8 +321,9 @@
             </ul>
         </ol>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="learning-storis.js"></script>
+
+   
+    <!-- <script src="learning-storis.js"></script> -->
 </body>
 
 </html>
