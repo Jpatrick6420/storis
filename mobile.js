@@ -82,7 +82,3 @@ delivery.addEventListener("click", function (e) {
   closeAll();
   removeHiddenClass(deliveryNotes);
 });
-
-const closeInstructions = document.querySelectorAll(".close-instructions");
-
-closeInstructions.forEach((item) => item.addEventListener("click", init));
