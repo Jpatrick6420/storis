@@ -7,24 +7,24 @@ class FurntitureReferenceItems {
   }
 }
 
-const furnitureReferenceTopics = [];
+const furnitureReferenceTopics = [{"Sleepers", "Product group => SLEEPR", {"Adjustable Bases", "product group => MATADJ"},{"Rug Pad", "Product Group => RUGPAD"}];
 
 const frames = new FurntitureReferenceItems(
   "Frames",
-  " Product Group => Frames"
+  " Product Group => FRAMES"
 );
 
 const fab = new FurntitureReferenceItems(
   "Fabric Protection",
-  " Product Group => action button => Fab"
+  " Product Group => FAB-3Y, FAB-5Y, FAB-7Y"
 );
 const mattressProtectors = new FurntitureReferenceItems(
   "Mattress Protectors",
-  "Collection => Mattpro"
+  "Collection => MATT-PRO"
 );
 const woodProtection = new FurntitureReferenceItems(
   "Wood Protection",
-  "Product group => wd"
+  "Product group => WD-PRO"
 );
 
 furnitureReferenceTopics.push(mattressProtectors, fab, frames, woodProtection);
