@@ -11,19 +11,23 @@ const furnitureReferenceTopics = [];
 
 const frames = new FurntitureReferenceItems(
   "frames",
-  "View Product Activity => Magnifying Glass => Product Group => Frames"
+  " Product Group => Frames"
 );
 
 const fab = new FurntitureReferenceItems(
   "Fabric Protection",
-  "View Product Activity => Magnifying Glass => Product Group => action button => Fab"
+  " Product Group => action button => Fab"
 );
 const mattressProtectors = new FurntitureReferenceItems(
   "Mattress Protectors",
-  "View Product Activity => Magnifying Glass => Collection => Mattpro"
+  "Collection => Mattpro"
+);
+const woodProtection = new FurntitureReferenceItems(
+  "Wood Protection",
+  "Product group => wd"
 );
 
-furnitureReferenceTopics.push(mattressProtectors, fab, frames);
+furnitureReferenceTopics.push(mattressProtectors, fab, frames, woodProtection);
 
 // console.log(referenceTopics);
 

@@ -57,6 +57,7 @@ nav p {
 .main-reference__item {
   margin: 0.5rem 0;
 }
+
 .nav-mobile__links {
   list-style: none;
   background-color: white;
@@ -74,6 +75,7 @@ nav p {
   background-color: white;
   border: 2px solid black;
   overflow: scroll;
+  max-width: 20rem;
 }
 .nav-mobile__link {
   background-color: white;
