@@ -22,6 +22,7 @@ nav {
   height: 50px;
   width: auto;
 }
+
 nav p {
   background-color: #47b5ff;
 }
@@ -67,8 +68,30 @@ nav p {
   padding: 0.3rem;
 }
 
+.title {
+  padding-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+}
 .hidden {
   display: none;
+}
+.desktop-nav {
+  display: none;
+}
+.nav-desktop__links {
+  display: flex;
+  list-style: none;
+}
+.nav-desktop__link a {
+  font-size: 0.8rem;
+  justify-content: space-between;
+  padding: 0 0.3rem;
+}
+.nav-desktop__link a:active,
+.nav-desktop__link a:hover {
+  color: yellow;
 }
 
 /* emp.clickable {
@@ -120,4 +143,12 @@ button {
 .instruction-section {
   padding-left: 1.6rem;
   padding-right: 1rem;
+}
+@media (min-width: 800px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav {
+    display: flex;
+  }
 }
