@@ -18,6 +18,11 @@ nav {
   border-bottom: 2px black solid;
   margin-bottom: 1rem;
 }
+.nav-mobile-header {
+  height: 3rem;
+  background-color: #a2d5fa;
+  padding-top: 0.6rem;
+}
 .title-image {
   height: 50px;
   width: auto;
@@ -55,6 +60,10 @@ nav p {
 .nav-mobile__links {
   list-style: none;
   background-color: white;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .nav-mobile__container {
   display: none;
@@ -69,6 +78,10 @@ nav p {
 .nav-mobile__link {
   background-color: white;
   padding: 0.3rem;
+}
+.nav-mobile__link a:active,
+.nav-mobile__link a:hover {
+  color: red;
 }
 
 .title {
@@ -154,4 +167,8 @@ button {
   .desktop-nav {
     display: flex;
   }
+}
+li {
+  margin-top: 0.5rem;
+  margiin-bottom: 0.5rem;
 }
