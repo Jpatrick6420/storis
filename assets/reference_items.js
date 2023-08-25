@@ -1,35 +1,37 @@
 const mobileNavMenu = document.querySelector(".nav-mobile__links");
 
-class ReferenceItems {
+class FurntitureReferenceItems {
   constructor(label, instructions) {
     this.label = label;
     this.instructions = instructions;
   }
 }
 
-const referenceTopics = [];
+const furnitureReferenceTopics = [];
 
-const frames = new ReferenceItems(
+const frames = new FurntitureReferenceItems(
   "frames",
   "View Product Activity => Magnifying Glass => Product Group => Frames"
 );
 
-const fab = new ReferenceItems(
+const fab = new FurntitureReferenceItems(
   "Fabric Protection",
   "View Product Activity => Magnifying Glass => Product Group => action button => Fab"
 );
-const mattressProtectors = new ReferenceItems(
+const mattressProtectors = new FurntitureReferenceItems(
   "Mattress Protectors",
   "View Product Activity => Magnifying Glass => Collection => Mattpro"
 );
 
-referenceTopics.push(mattressProtectors, fab, frames);
+furnitureReferenceTopics.push(mattressProtectors, fab, frames);
 
 // console.log(referenceTopics);
 
-const referenceSection = document.querySelector(".main-reference__items");
+const furnitureReferenceSection = document.querySelector(
+  ".main-reference__items"
+);
 
-referenceTopics.map((topic) => {
+furnitureReferenceTopics.map((topic) => {
   const topicMarkup = `
   <div class='main-reference__topic'>
         <h3 id="${topic.label.toLowerCase()}">${topic.label}</h3>
@@ -37,6 +39,8 @@ referenceTopics.map((topic) => {
     </div>
     `;
 
-  referenceSection.insertAdjacentHTML("afterbegin", topicMarkup);
+  furnitureReferenceSection.insertAdjacentHTML("afterbegin", topicMarkup);
 });
 // console.log(referenceTopics);
+
+/// Electronics references

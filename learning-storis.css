@@ -32,8 +32,11 @@ nav p {
 }
 .main-reference__topic {
   border: 2px black solid;
-  margin: 1rem 0;
-  padding: 0.2rem;
+
+  padding: 0.2rem 0.5rem;
+  box-shadow: 2px 2px 2px 2px black;
+  max-width: 32rem;
+  margin: 1rem auto;
 }
 .main-reference__topic,
 .main-reference__topic p,
