@@ -10,7 +10,7 @@ class FurntitureReferenceItems {
 const furnitureReferenceTopics = [];
 
 const frames = new FurntitureReferenceItems(
-  "frames",
+  "Frames",
   " Product Group => Frames"
 );
 
