@@ -1,4 +1,4 @@
-hi const mobileNavMenu = document.querySelector(".nav-mobile__links");
+const mobileNavMenu = document.querySelector(".nav-mobile__links");
 
 class FurntitureReferenceItems {
   constructor(label, instructions) {
