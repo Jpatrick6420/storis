@@ -1,4 +1,4 @@
-const mobileNavMenu = document.querySelector(".nav-mobile__links");
+hi const mobileNavMenu = document.querySelector(".nav-mobile__links");
 
 class FurntitureReferenceItems {
   constructor(label, instructions) {
@@ -35,7 +35,7 @@ const furnitureReferenceSection = document.querySelector(
   ".main-reference__items"
 );
 
-furnitureReferenceTopics.sort((a,b) => a.label.localeCompare(b.label)).map((topic) => {
+furnitureReferenceTopics.sort((a,b) => a.label > b.label).map((topic) => {
   const topicMarkup = `
   <div class='main-reference__topic'>
         <h3 id="${topic.label.toLowerCase()}">${topic.label}</h3>
