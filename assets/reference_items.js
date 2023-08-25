@@ -35,7 +35,7 @@ const furnitureReferenceSection = document.querySelector(
   ".main-reference__items"
 );
 
-furnitureReferenceTopics.sort((a,b) => a.label < b.label).map((topic) => {
+furnitureReferenceTopics.sort((a,b) => a.label > b.label).map((topic) => {
   const topicMarkup = `
   <div class='main-reference__topic'>
         <h3 id="${topic.label.toLowerCase()}">${topic.label}</h3>
