@@ -1,4 +1,7 @@
 const mobileNavMenu = document.querySelector(".nav-mobile__links");
+const furnitureReferenceSection = document.querySelector(
+  ".main-reference__items"
+);
 
 class FurntitureReferenceItems {
   constructor(label, instructions) {
@@ -7,7 +10,11 @@ class FurntitureReferenceItems {
   }
 }
 
-const furnitureReferenceTopics = [{"Sleepers", "Product group => SLEEPR", {"Adjustable Bases", "product group => MATADJ"},{"Rug Pad", "Product Group => RUGPAD"}];
+const furnitureReferenceTopics = [
+  { label: "Sleepers", instructions: "Product group => SLEEPR" },
+  { label: "Adjustable Bases", instructions: "product group => MATADJ" },
+  { label: "Rug Pad", instructions: "Product Group => RUGPAD" },
+];
 
 const frames = new FurntitureReferenceItems(
   "Frames",
@@ -29,13 +36,13 @@ const woodProtection = new FurntitureReferenceItems(
 
 furnitureReferenceTopics.push(mattressProtectors, fab, frames, woodProtection);
 
+const furnitureReferenceTopicsSorted = furnitureReferenceTopics.sort((a, b) => {
+  return a.label.toLowerCase().localeCompare(b.label.toLocaleLowerCase());
+});
+console.log(furnitureReferenceTopicsSorted);
 // console.log(referenceTopics);
 
-const furnitureReferenceSection = document.querySelector(
-  ".main-reference__items"
-);
-
-furnitureReferenceTopics.map((topic) => {
+furnitureReferenceTopicsSorted.map((topic) => {
   const topicMarkup = `
   <div class='main-reference__topic'>
         <h3 id="${topic.label.toLowerCase()}">${topic.label}</h3>
@@ -43,7 +50,7 @@ furnitureReferenceTopics.map((topic) => {
     </div>
     `;
 
-  furnitureReferenceSection.insertAdjacentHTML("afterbegin", topicMarkup);
+  furnitureReferenceSection.insertAdjacentHTML("beforeend", topicMarkup);
 });
 // console.log(referenceTopics);
 
