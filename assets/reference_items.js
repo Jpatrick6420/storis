@@ -14,6 +14,7 @@ const furnitureReferenceTopics = [
   { label: "Sleepers", instructions: "Product group => SLEEPR" },
   { label: "Adjustable Bases", instructions: "product group => MATADJ" },
   { label: "Rug Pad", instructions: "Product Group => RUGPAD" },
+  {label: "line comments", instructions : "go in ticket=> go to merchandise screen => click item=> click action button => select line comments "},
 ];
 
 const frames = new FurntitureReferenceItems(
