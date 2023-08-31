@@ -11,10 +11,14 @@ class FurntitureReferenceItems {
 }
 
 const furnitureReferenceTopics = [
-  { label: "Sleepers", instructions: "Product group => SLEEPR" },
-  { label: "Adjustable Bases", instructions: "product group => MATADJ" },
+  { label: "Sleepers", instructions: "Product Group => SLEEPR" },
+  { label: "Adjustable Bases", instructions: "Product Group => MATADJ" },
   { label: "Rug Pad", instructions: "Product Group => RUGPAD" },
-  {label: "line comments", instructions : "go in ticket=> go to merchandise screen => click item=> click action button => select line comments "},
+  {
+    label: "Line Comments",
+    instructions:
+      "Enter Ticket=> go to Merchandise Screen => Click Item=> Click Action Button => Select Line Comments",
+  },
 ];
 
 const frames = new FurntitureReferenceItems(
@@ -46,8 +50,8 @@ console.log(furnitureReferenceTopicsSorted);
 furnitureReferenceTopicsSorted.map((topic) => {
   const topicMarkup = `
   <div class='main-reference__topic'>
-        <h3 id="${topic.label.toLowerCase()}">${topic.label}</h3>
-         <p>${topic.instructions}</p>
+        <h3 class='title' id="${topic.label.toLowerCase()}">${topic.label}</h3>
+         <p class='instructions'>${topic.instructions}</p>
     </div>
     `;
 
