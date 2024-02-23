@@ -11,35 +11,18 @@ class FurntitureReferenceItems {
 }
 
 const furnitureReferenceTopics = [
-  { label: "Sleepers", instructions: "Product Group => SLEEPR" },
-  { label: "Adjustable Bases", instructions: "Product Group => MATADJ" },
-  { label: "Rug Pad", instructions: "Product Group => RUGPAD" },
-  {
-    label: "Line Comments",
-    instructions:
-      "Enter Ticket=> go to Merchandise Screen => Click Item=> Click Action Button => Select Line Comments",
-  },
+   {label: "Protectors", instructions: "product category => MATT-PRO"},
+{label: "Frames", instructions : "product group => FRAMES"},
+{label: "Blue Rewards", instructions: "sku: BLUE-REWARDS"},
+{label: "Bunkettes", instructions: "product group => BUNKIE"},
+{label: "Bed Brackets", instructions : "product group => CVNBED"},
+{label: "Swivel", instructions : "product group => MOTACC"},
+{label: "Battery Packs", instructions : "product group => MOTBAT"},
+{label: "Adjustable Base Acc", instructions: "product group => ADJACC"},
+{label: "Split Queen Boxspring", instructions: "collection => SQ-FND"},
+{label: "Rug Pads", instructions: "product group => RUGPAD"},
 ];
 
-const frames = new FurntitureReferenceItems(
-  "Frames",
-  " Product Group => FRAMES"
-);
-
-const fab = new FurntitureReferenceItems(
-  "Fabric Protection",
-  " Product Group => FAB-3Y, FAB-5Y, FAB-7Y"
-);
-const mattressProtectors = new FurntitureReferenceItems(
-  "Mattress Protectors",
-  "Collection => MATT-PRO"
-);
-const woodProtection = new FurntitureReferenceItems(
-  "Wood Protection",
-  "Product group => WD-PRO"
-);
-
-furnitureReferenceTopics.push(mattressProtectors, fab, frames, woodProtection);
 
 const furnitureReferenceTopicsSorted = furnitureReferenceTopics.sort((a, b) => {
   return a.label.toLowerCase().localeCompare(b.label.toLocaleLowerCase());
