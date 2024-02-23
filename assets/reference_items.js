@@ -21,7 +21,7 @@ const furnitureReferenceTopics = [
 {label: "Adjustable Base Acc", instructions: "product group => ADJACC"},
 {label: "Split Queen Boxspring", instructions: "collection => SQ-FND"},
 {label: "Rug Pads", instructions: "product group => RUGPAD"},
-{label:"Special Order", instructions:"category: SO; vender: Code"}
+{label:"Special Order", instructions:"collection: SO; vender: Code"}
 ];
 
 
